@@ -1,0 +1,14 @@
+.wrapper-about{
+    width: 100%;
+    min-height: 100%;
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+}
+
+.wrapper-about .lamp-box{
+    position: absolute;
+    left: 50%;
+    color: yellow;
+    transform: rotate(180deg);
+}
