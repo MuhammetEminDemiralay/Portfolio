@@ -8,12 +8,14 @@ function Container(){
     return (
         <>  
             <div className="wrapper">
-                <Navbar/>
-                <div className="wrapper-body">
-                    <About/>
-                    <Skil/>
-                </div>   
-                <Footer/>
+                <div className="wrapper-content">
+                    <Navbar/>
+                    <div className="wrapper-body">
+                        <About/>
+                        <Skil/>
+                    </div>   
+                    <Footer/>
+                </div>
             </div>
         </>
     )

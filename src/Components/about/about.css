@@ -1,14 +1,98 @@
 .wrapper-about{
-    width: 100%;
-    min-height: 100%;
-    color: #fff;
-    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    width: 100%;
+    background-color: #0a0908;
 }
 
 .wrapper-about .lamp-box{
     position: absolute;
+    top: 0;
     left: 50%;
-    color: yellow;
-    transform: rotate(180deg);
+    transform: translateX(-50%);
+    transition: all 1s linear;
+    z-index: 11;
+}
+
+.lamp-box .light{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%) rotate(180deg);
+    font-size: 50px;
+    cursor:pointer;
+}
+
+.lamp-box .light-stick{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 20px;
+    background-color: #fff;
+    color: #fff;
+    transform: translateX(-50%);
+}
+
+.wrapper-about .light-box{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 70%;
+}
+
+.light-box .light-shadow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.3);
+    clip-path: polygon(47% 0, 53% 0, 100% 100%, 0% 100%);
+    padding: 0 40px 5px 40px;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.light-shadow .text{
+    margin-top: 40px;
+    width: 50%;
+}
+
+
+@media only screen and (max-width:768px){
+    .wrapper-about{
+        height: calc(50vh - 140px);
+    }
+
+    .wrapper-about .light{
+        font-size: 30px;
+    }
+
+    .wrapper-about .light-box{
+        top: 40px;
+
+    }
+
+    .lamp-box .light-stick{
+        height: 10px;
+    }
+
+    .lamp-box .light{
+        top: 5px;
+    }
+
+    .light-box .light-shadow{
+        align-items: end;
+        font-size: 10px;
+    }
 }

@@ -4,14 +4,15 @@ import './navbar.css'
 function Navbar(){
     return (
         <>
-            <div className="wrapper-navbar">
+            <div className="navbar">
                 <div className="logo-box">
-                    <i class='bx bxl-gmail logo'></i>
+                    <i class='bx bxl-gmail' ></i>
                 </div>
-                <span>Portfolio</span>
-                <span>About</span>
-                <span>Albums</span>
-                <span>Contact</span>
+                <h1>Portfolio</h1>
+                <div className="contact">
+                     <i class='bx bxl-instagram-alt instagram'></i>
+                     <i class='bx bxl-twitter twitter' ></i>
+                </div>
             </div>
         </>
     )
